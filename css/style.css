@@ -1,0 +1,84 @@
+.todo {
+    
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    
+    
+}
+
+#cabeza0 {
+    text-align: center;
+    border-radius: 20px;
+  
+}
+
+#contenedor {
+    display: flex;
+}
+
+#columna1 {
+    background-color: #def4ff;
+    position: relative;
+    padding: auto;
+    margin: 0 10px;
+    width: 70%;
+}
+
+#flotar {
+    position: absolute;
+    /* text-align: left; */
+    left: 0;
+    top: 0;
+}
+
+#contenedor h2 {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(4, 4, 211, 0.616);
+    text-decoration: underline;
+
+
+}
+
+#columna2 {
+    padding: auto;
+    margin: 0 10px;
+    width: 30%;
+
+}
+
+/* segunda parte del CV Perfil */
+
+#contenedor2{
+    display: flex;
+}
+#columna3{
+    background-color: #def4ff;
+    padding: auto;
+    margin: 0 10px;
+    width: 70%;
+    text-align: justify;
+
+}
+
+#columna3 h2{
+    text-decoration: underline;
+    text-align: center;
+    
+}
+
+
+#columna4 {
+    padding: auto;
+    margin: 0 10px;
+    width: 30%;
+}
+
+#columna4 h2{
+    text-decoration: underline;
+}
+
+#columna4 li{
+    text-align: justify;
+}
