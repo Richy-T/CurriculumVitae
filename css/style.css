@@ -12,6 +12,10 @@
     border-radius: 20px;
   
 }
+/* imgenes de redes sociales */
+img{
+    border-radius: 100%;
+}
 
 #contenedor {
     display: flex;
