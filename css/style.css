@@ -12,10 +12,6 @@
     border-radius: 20px;
   
 }
-/* imgenes de redes sociales */
-img{
-    border-radius: 100%;
-}
 
 #contenedor {
     display: flex;
@@ -23,6 +19,7 @@ img{
 
 #columna1 {
     background-color: #def4ff;
+    border-radius: 10px;
     position: relative;
     padding: auto;
     margin: 0 10px;
@@ -31,8 +28,7 @@ img{
 
 #flotar {
     position: absolute;
-    /* text-align: left; */
-    left: 0;
+     left: 0;
     top: 0;
 }
 
@@ -44,6 +40,7 @@ img{
 
 
 }
+
 
 #columna2 {
     padding: auto;
@@ -59,9 +56,9 @@ img{
 }
 #columna3{
     background-color: #def4ff;
+    border-radius: 10px;
     padding: auto;
-    margin: 0 10px;
-    width: 70%;
+     width: 70%;
     text-align: justify;
 
 }
@@ -71,7 +68,9 @@ img{
     text-align: center;
     
 }
-
+#columna3 p{
+     margin: 20px;
+}
 
 #columna4 {
     padding: auto;
@@ -79,10 +78,252 @@ img{
     width: 30%;
 }
 
+
 #columna4 h2{
     text-decoration: underline;
 }
 
 #columna4 li{
     text-align: justify;
+}
+
+
+#contenedor3{
+    display: flex;   
+
+}
+
+
+#columna6{    
+    background-color: #def4ff;
+    border-radius: 10px;
+    position: relative;
+    padding: auto;
+    margin: 0 10px;
+    width: 50%;
+    
+}
+
+/* habilidades & Software */
+#sof{
+    text-decoration: underline;
+}
+#tabla1 td h2{
+    text-align: center;
+}
+
+#tabla1{
+    width: 100%;
+}
+
+.habi{
+    display: flex;
+    width: auto;
+    margin: auto;
+    padding: 10px;
+}
+
+.contai{
+    width: 100%;
+    background-color: rgb(216, 241, 209);
+    border-radius: 4rem; 
+} 
+
+.porcen{
+text-align: right;
+padding: 10px;
+color: rgb(254, 255, 254);
+font-weight: 500;
+}
+
+/* animacion para word */
+
+.Word{
+    background-color: rgb(3, 4, 94);
+    animation: word 2s forwards;
+    border-radius: 2rem;
+}
+
+@keyframes word{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+/* animación excel */
+.excel{
+    background-color: rgb(2, 62, 138);
+    animation: excel 2s forwards;
+    border-radius: 4rem;
+}
+
+@keyframes excel{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+/* Animación para Power Point */
+.pwp{
+    background-color: rgb(0, 119, 182);
+    animation: pwp 2s forwards;
+    border-radius: 4rem;
+}
+@keyframes pwp{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+/* Animación para Publisher */
+.publisher{
+    background-color: rgb(0, 150, 199);
+    animation: publisher 2s forwards;
+    border-radius: 4rem;
+}
+@keyframes publisher{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+/* Animación para Google Analitycs */
+.GA{
+    background-color: rgb(0, 180, 216);
+    animation: GA 2s forwards;
+    border-radius: 4rem;
+}
+@keyframes GA{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+/* Animación para Social Media */
+.SM{
+    background-color: rgb(72, 202, 228);
+    animation: SM 2s forwards;
+    border-radius: 4rem;
+}
+@keyframes SM{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+#tabla1 h2{
+    text-align: left;
+}
+#tabla1 td{
+    text-align: left;
+}
+
+/* progreso en círculos para suite de adobe y otros */
+
+ .seccion{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* align-items: center; */
+
+ }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    min-height: 100vh;
+    
+
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.container .progress{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: #11eed1;
+    background: #444 linear-gradient(to right, transparent 50%, var(--clr) 0);
+}
+
+.container .progress h3{
+    
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.5em;
+    z-index: 1;
+    font-weight: 500;
+}
+
+.container .progress h3 span{
+    font-size: 0.65px|;
+    font-weight: 400;
+
+}
+
+.container .progress h4{
+   
+    position: absolute;
+    top: 50%;
+    left: 50;
+    transform: translateX(20%);
+    z-index: 1;
+    font-weight: 500;
+    color: var(--clr);
+    text-transform: uppercase;
+}
+
+.container .progress::before{
+    content: '' ;
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+}
+
+.container .progress::after{
+    content: '';
+    position: absolute;
+    inset: 10px;
+    border-radius: 50%;
+    background:#222;
+
+}
+
+.container .progress::before{
+    background: var(--clr);
+    transform: rotate(calc(((var(--i) - 50) * 0.01turn)));
+}
+
+footer{
+    text-align: center;
+    text-decoration: underline;
+    color: cadetblue;
+    
 }
